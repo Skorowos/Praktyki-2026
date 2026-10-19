@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <section class="container">
+    <section class="header">
+      <h2>Lista zadań</h2>
+      <span id="counter" class="counter">0 z 0 wykonane</span>
+    </section>
+
+    <div class="input">
+      <input type="text" id="taskInput" placeholder="Dodaj nowe zadanie...">
+      <button id="dodajBtn">Dodaj</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Wszystkie</button>
+      <button class="filter-btn" data-filter="active">Do zrobienia</button>
+      <button class="filter-btn" data-filter="completed">Wykonane</button>
+    </div>
+
+    <ul id="taskList" class="task-list"></ul>
+</section>
+
+  <script src="scrypt.js"></script>
+</body>
+</html>
+ 
