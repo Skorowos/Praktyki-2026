@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>usługi AI</title>
+</head>
+<body>
+    <header id="gora">
+        <img src="logo.jpg" class="logo">
+        <ul class="menu">
+                <li><a href="#main">O nas</a></li>
+                <li><a href="#oferta">Oferta</a></li>
+                <li><a href="#jakdziala">Jak to działa</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+    </header>
+
+    <section class="main" id="main">
+         <h1>Czy AI poleca Twoją markę?</h1>
+        <p>Sprawdź, jak Twoja oferta pojawia się w odpowiedziach narzędzi AI.</p>
+        <a href="#kontakt" class="przycisk1">Sprawdź widoczność</a>
+    </section>
+
+    <section class="oferta" id="oferta">
+        <h3>Monitoring AI</h3>
+        <h3>Analiza konkurencji</h3>
+        <h3>Rekomendacje</h3>
+    </section>
+
+
+    <section class="jakdziala" id="jakdziala">
+        <h2>Jak to działą?</h2>
+            <ol>
+                <li>Podanie adresu strony</li>
+                <li>Analiza</li>
+                <li>otrzymanie wyników</li>
+            </ol>
+
+    </section>
+
+
+    <section class="kontakt" id="kontakt">
+        <h2>Skontaktuj się z nami</h2>
+
+        <form id="formularz">
+
+            <label for="imie">Imię:</label>
+            <input type="text" id="imie" placeholder="Wpisz swoje imię" required>
+    
+            <label for="email">Adres e-mail:</label>
+            <input type="email" id="email" placeholder="Wpisz adres e-mail" required>
+    
+            <label for="www">Adres WWW:</label>
+            <input type="url" id="www" placeholder="https://...." required>
+            <button type="submit" class="submit">Wyślij</button>
+    </section>
+
+    <footer>
+        <p><span id="rok"></span></p>
+        <p>Kontakt: kontakt@gamil.com</p>
+        <a href="#gora">Wróć na górę</a>
+    </footer>
+
+    <script src="scrypt.js"></script> 
+</body>
+</html>
+
+<script>
+  document.getElementById('rok').textContent = new Date().getFullYear();
+</script>
